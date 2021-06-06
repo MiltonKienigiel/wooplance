@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="210.396" height="40.328" viewBox="0 0 210.396 40.328">
+  <g id="logo" transform="translate(-95.137 -39)">
+    <text id="W" transform="translate(95.137 71.328)" fill="#fff" font-size="40" font-family="Bahnschrift"><tspan x="0" y="0">W</tspan></text>
+    <text id="plance" transform="translate(192.533 69)" fill="#fff" font-size="38" font-family="Bahnschrift"><tspan x="0" y="0">plance</tspan></text>
+    <path id="Trazado_1" data-name="Trazado 1" d="M75.39,95.712c1.347-.067,1.577-2.4,0-2.4L59.17,93.2A8.38,8.38,0,0,0,54.1,95.654c-3.529,3.183-3.241,10.576.269,13.494a9.56,9.56,0,0,0,4.7,2.208H75.39c4.6.29,7.584-2.993,7.245-6.143h-2.6c.294,1.99-2,3.55-3.879,3.455l-16.892.1c-6.55-.87-6.5-12.141.1-12.956Z" transform="translate(79 -42.872)" fill="#fff"/>
+    <path id="Trazado_2" data-name="Trazado 2" d="M80.381,108.868c-1.347.068-1.575,2.4,0,2.4l16.221.1a8.387,8.387,0,0,0,5.066-2.455c3.526-3.185,3.235-10.578-.278-13.494a9.563,9.563,0,0,0-4.7-2.2l-16.317.011c-4.6-.287-7.582,3-7.241,6.147l2.6,0c-.3-1.989,1.993-3.55,3.876-3.457L96.5,95.806c6.551.865,6.51,12.137-.087,12.956Z" transform="translate(86.242 -42.876)" fill="#fff"/>
+  </g>
+</svg>

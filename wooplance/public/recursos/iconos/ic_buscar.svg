@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="19.414" height="20.414" viewBox="0 0 19.414 20.414">
+<<<<<<< HEAD
+  <g id="ic_buscar" transform="translate(-2.58 -3)">
+    <circle id="Oval" cx="8" cy="8" r="8" transform="translate(3.58 4)" fill="none" stroke="#8f8f8f" stroke-linecap="round" stroke-width="2"/>
+    <line id="Path" x2="4" y2="4" transform="translate(16.58 18)" fill="none" stroke="#8f8f8f" stroke-linecap="round" stroke-width="2"/>
+=======
+  <g id="ic_buscar" transform="translate(1 1)">
+    <circle id="Oval" cx="8" cy="8" r="8" transform="translate(0 0)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="2"/>
+    <line id="Path" x2="4" y2="4" transform="translate(13 14)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="2"/>
+>>>>>>> 190de97bb9639691e01dcda9120ad7393e69a048
+  </g>
+</svg>

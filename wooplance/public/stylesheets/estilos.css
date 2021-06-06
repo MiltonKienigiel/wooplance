@@ -1,0 +1,520 @@
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;   
+}
+
+
+#fondo_color{
+    background-color: #7100FF;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    z-index: -10;
+}
+
+#fondo_negro{
+    background-color: #000;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    z-index: -5;
+    opacity: 0.36; 
+}
+
+.nav{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px 10px 25px 10px;
+    flex-direction: row;
+    z-index: 100;
+
+    top: 0;
+    width: 100vw;
+    position: fixed;
+    background-color: transparent;
+    transition: .2s;
+}
+
+#logo{
+    margin: 20px 10px 0 50px;
+    
+    width: 100px;
+    height: 50px;
+    flex-grow: 0.7;
+    flex-basis: 100px;
+}
+
+.grupo_buscar{
+    margin: 13px 0 0 0;
+    padding: 10px 10px 10px 10px;
+
+    flex-grow: 0.7;
+    background-color: #fff;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: row;
+    flex-basis: 400px;
+}
+
+.grupo_categorias{
+    display: inline-block;
+    background-color: #F8F9F8;
+    border-radius: 10px;
+    margin: 0 10px 0 0;
+    align-self: flex-start;
+}
+
+#btn_categorias{
+    background-color: #F8F9F8;
+    border: none;
+    padding: 10px 15px 10px 15px;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.7px;
+    border-radius: 10px;   
+    transition: .2s;
+    height: 40px;
+}
+
+#btn_categorias:hover{
+    background-color: #d8d8d8;
+}
+
+#input_buscar{
+    border: none;
+    border-radius: 15px;
+    margin: 0 10px 0 10px;
+
+    align-self: center;
+    justify-self: center;
+    
+    font-size: 14px;
+    width: 450px;
+    height: 30px;
+    padding-left: 5px;
+
+    outline: none;
+}
+
+#btn_buscar{
+    height: 40px;
+    justify-items: flex-end;
+    border: none;
+    background-color: #C9A2FF;
+    color: white;
+    font-weight: bold;
+    margin: 0;
+    padding: 0 15px 0 15px;
+    border-radius: 10px;
+    font-size: 14px;
+    transition: .2s;
+}
+
+#btn_buscar:hover{
+    background-color: #a78bce ;
+}
+
+.grupo_entrar{
+    margin: 23px 0 0 0;
+    padding: 0 0 0 100px;
+    flex-grow: 1.1;
+    flex-basis: 100px;
+    flex-direction: row;
+}
+
+#btn_iniciarsesion{
+    border: none;
+    border-radius: 10px;
+    background-color: #8F8F8F;
+    color: white;
+
+    margin: 0 5px 0 0;
+    letter-spacing: 0.5px;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 10px;
+    transition: .2s;
+}
+
+#btn_iniciarsesion:hover{
+    background-color: #5e5e5e ;
+}
+
+#btn_registrarse{
+    border: none;
+    border-radius: 10px;
+    background-color: #C9A2FF;
+    color: white;
+
+    margin: 0 0 0 5px;
+    letter-spacing: 0.8px;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 10px;
+}
+
+#btn_registrarse:hover{
+    background-color: #a78bce ;
+}
+
+.Titulo{
+    margin-top: 230px;
+    color: white;
+    font-size: 45px;
+    font-weight: bold;
+    text-align: left;
+    width: 650px;
+    height: fit-content;
+
+    line-height: 40px;
+}
+
+.Titulo > b{
+    color: #C9A2FF;
+    font-weight: bold;
+}
+
+.Subtitulo{
+    color: #F8F9F8;
+    margin-top: 30px;
+    width: 650px;
+    font-weight: lighter;
+    font-size: 17px;
+    height: fit-content;
+}
+
+.Sugerencias{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    
+    bottom: 0;
+    margin-bottom: 20px;
+}
+
+.Sugerencias > p{
+    font-weight: 300; 
+    font-size: 13px;
+    color:white;
+    letter-spacing: 0.5px;
+
+    align-self: flex-start;
+}
+
+.Sugerencias > ul{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    
+
+}
+
+.BotonSug{
+    text-align:center;
+    font-size:10px;
+    border: 2px solid #FFFFFF;
+    border-radius: 10px;
+    height: 25px;
+    font-weight: normal;
+    color: white;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 8px 12px 8px 12px;
+    margin: 0 5px 0 5px;
+    transition: .2s;
+    align-self: flex-start;
+
+}
+
+.BotonSug:hover{
+    background-color: white;
+    color: #2E3658;
+}
+
+.ImagenPersona{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.FLECHA{
+    position: absolute;
+    top: 88%;
+    left: 45%;
+    right: 50%;
+    margin-bottom: 50px;
+
+    display: flex;
+    flex-direction: column;
+    column-gap: 0;
+    height: 30px;
+    width: fit-content;
+
+    animation: animacionExplorar 1s ease-in-out alternate infinite;
+}
+
+.FLECHA > a{
+
+    text-decoration: none;
+    font-size: 14px;
+    color: #fff;
+    padding: 8px;
+}
+
+.FLECHA > img{
+    justify-items: center;
+    
+}
+
+@keyframes animacionExplorar{
+    from{
+        top: 88%;
+    }
+
+    to{
+        top: 92%;
+    }
+}
+
+.wrapper{
+    width: 90vw;
+    height: fit-content;
+    padding: 30px 30px 30px 38px;
+}
+
+.fondoCasiBlacnco{
+    background-color: #F8F9F8;  
+    width: 100vw;
+    height: 100vh;
+}
+
+.TitulosSecciones{
+    margin-top: 75px;
+    color:#2E3658;
+    font-size:28px;
+    font-weight:900;
+}
+
+.card-list {
+    display: flex;
+    padding: 3rem;
+
+    margin-top: 35px;
+
+}
+
+.card-list::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+.card-list::-webkit-scrollbar-thumb {
+    background: #eeeeee;
+    border-radius: 10px;
+    
+}
+
+.card-list::-webkit-scrollbar-track {
+    background: #eeeeee;
+}
+
+.card {
+    
+    width: 280px;
+    height: 360px;
+    background: #ffffff;
+    transition: .2s;
+    box-shadow: 0px 0px 10px #0000001F;
+    border-radius: 20px;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.Nombrecard {
+    color:#2E3658;
+    font-weight: 700;
+    font-size: 15px;
+    margin-top: 30px;
+}
+
+.Textocard{
+    color: #2E3658;
+    font-weight: normal;
+    font-size: 10px;
+    text-align: justify;
+    height: 125px;
+    width: 135px;
+    margin-top: 28px;
+}
+
+.card:hover {
+    transform: translateY(-1rem);
+}
+
+.card:hover~.card {
+    transform: translateX(100px);
+}
+
+.card:not(:first-child) {
+    margin-left: -130px;
+}
+
+.fondoBlanco{
+    background-color: #ffffff;  
+    width: 100vw;
+    height: 120vh;
+}
+
+.comoFuncionaImg{
+    width: 250px;
+    height: 200px;
+}
+
+.descComoFunciona {
+    text-align: center;
+    color: #2E3658;
+    font-size: 15px;
+    margin-top: 20px;
+    width: 250px;
+}
+
+.PelotaComoFunciona{
+    margin-top: -17px; 
+  
+}
+
+.contactar{
+    font-size:28px;
+    margin-top: 90px;
+    font-weight: bold;
+    color: #2E3658;
+}
+
+.descContacto{
+    color: #2E3658;
+    width: 600px;
+    text-align: left;
+    letter-spacing: 0.58px; 
+}
+
+
+label{
+    font-size: 12px;
+}
+
+.inputContactoMail{ 
+    border-radius: 5px;
+    width: 400px;
+    height: 54px;
+    border: none;
+    background-color: #F8F9F8;
+    margin: 0 0 20px 10px;
+    font-size: 13px;
+
+    outline: none;
+}
+
+.inputContactoMSJ{
+    
+    outline: none;
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 5px;
+    width: 550px;
+    height: 150px;
+    border: none;
+    background-color: #F8F9F8;
+    margin: 0 0 0 10px;
+
+
+    max-height: 200px;
+}
+
+.BtnEnivar{
+    font-weight: 500;
+    margin: 40px 0 0 10px;
+    width: 120px;
+    height: 45px;
+    background-color: #2E3658;
+    color:#fff;
+    display:inline-block;
+    border-radius: 10px;
+    transition: .2s;
+    border: none;
+}
+
+.BtnEnivar:hover{
+    background-color: #5C6278 ;
+}
+
+.IconEnviar{
+    width: 15px;
+    margin-right: 10px;
+}
+
+.nuestrasRedesTit{
+    color: white;
+    font-weight: 600;
+    font-size: 25px;
+    margin-top: 90px;
+}
+
+.Redes{
+    color: white;
+    font-weight: 400;
+    font-size: 15px;
+    margin-top: 60px;
+    padding: 20px;
+    list-style:none;
+    margin-bottom: 10px;
+    
+}
+
+.iconosRedes{
+    margin-right: 25px;
+    width: 22px;
+}
+
+.infoContTit{
+    margin-top: 20px;
+    letter-spacing: 0.6px;
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+
+
+.info{
+    color: white;
+    text-decoration: none;
+    transition:  .3s;
+}
+
+.instagram:hover{
+    color: rgb(247, 72, 130);
+}
+
+.facebook:hover{
+    color: #2E3658;
+}
+
+.linkedin:hover{
+    color: #0a66c2;
+}
+
+.whatsapp:hover{
+    color: #71f562;
+}
+
+.gmail:hover{
+    color: rgb(255, 0, 0);
+}
+
