@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Busca freelancers para llevar acabo tu proyecto con Wooplance">
@@ -8,245 +9,280 @@
     <meta name="author" content="Wooplance">
     <title>Wooplance -- freelancers para tu proyecto</title>
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <link rel="stylesheet" href='stylesheets/estilos.css'>
     <link rel="stylesheet" href='stylesheets/login.css'>
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
-  </head>
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
 
-  <body>
+</head>
+
+<body>
 
     <div>
         <div id="fondo_color"></div>
         <div id="fondo_negro"></div>
-   
+
     </div>
 
-    <header class="cabezera">
-        <nav class="nav">
-            <a id="logo" href="#"><img src="/recursos/imagenes/logo.svg" alt="logo wooplance"> </a>
-            
-            <div class="grupo_buscar">
-                <div class="grupo_categorias">
-                    <button id="btn_categorias" class="item_cat">Categorias</button>
-                </div>
-                <input id="input_buscar" type="text" placeholder="EJ: 'Web Developer' ">
-                <button id="btn_buscar">Buscar</button>
-            </div>
-
-            <div class="grupo_entrar">
-                <button id="btn_iniciarsesion" >Iniciar Sesión</button>
-                <button id="btn_registrarse" onclick="openRegisterForm()" >Registrarse</button>
-            </div>
-
-        </nav>
-    </header>
+   <%- include('./partials/headerDeslogueado') %> 
 
     <div class="popup-overlay"></div>
     <div class="popup">
-    <div class="popup-close" onclick="closeRegisterForm()">&times;</div>
-    <div class="form">
-        <div class="header">
-            <p>Register Now</p>
-        </div>
-        <div class="element">
-            <input placeholder= "Mail" type="email" id="Mail">
-        </div>
-        <div class="element">
-            <input placeholder= "Nombre de Usuario" type="text" id="username">
-        </div>
-        <div class="element">
-            <input placeholder= "Contraseña" type="password" id="password">
-        </div>
-        <!--<div class="google-btn">
+        <div class="popup-close" onclick="closeRegisterForm()">&times;</div>
+        <div class="form">
+            <div class="header">
+                <p>Register Now</p>
+            </div>
+            <div class="element">
+                <input placeholder="Mail" type="email" id="Mail">
+            </div>
+            <div class="element">
+                <input placeholder="Nombre de Usuario" type="text" id="username">
+            </div>
+            <div class="element">
+                <input placeholder="Contraseña" type="password" id="password">
+            </div>
+            <!--<div class="google-btn">
             <div class="google-icon-wrapper">
               <img class="google-icon" src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg"/>
             </div>
             <p class="btn-text"><b>Sign in with google</b></p>
         </div>-->
-        <div class="element">
-            <button class="Register" href="#">Registrarse</button>
+            <div class="element">
+                <button class="Register" href="#">Registrarse</button>
+            </div>
         </div>
     </div>
-    </div>
-   
-    <div class="container-fluid">
-       <div class="wrapper" >
+
+    <div class="container-fluid first-container">
+        <div class="wrapper">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-6">                 
+                    <div class="col-6">
                         <h1 class="Titulo">Encontrá freelancers para tu <b>proyecto</b></h1>
                         <p class="Subtitulo">En Wooplance te facilitamos la conexión entre vos y tu tu futuro socio</p>
-                        <div class="Sugerencias">
-                                <p> Sugerencias: </p>
-                                <ul>
-                                    <li type="button" class="BotonSug" >Web Developer</li>
-                                    <li type="button" class="BotonSug">Ux designer</li>
-                                    <li type="button" class="BotonSug">Google Ads</li>
-                                </ul>
+
+                    </div>
+                    <div class="col-6 position-relative">
+                        <img src="/recursos/imagenes/persona 3.png" alt="foto" class="ImagenPersona img-fluid">
+                        <div class="worker_description">
+                            <h3>Nicolas Gutik</h3>
+                            <p>Modelador 3D</p>
                         </div>
                     </div>
-                    <div class="col-6">
-                        <img src="/recursos/imagenes/persona 4.png" alt="foto" class="ImagenPersona"></img>
-                    </div>
 
-                    <div class="FLECHA">
-                        <a href="#categorias_populares" >Comienza a Explorar</a>
-                        <img src="/recursos/iconos/ic_flecha abajo.svg" alt="wooplance - comienza a explorar">
-                    </div>
+                   <div class="FLECHA">
+                    <a href="#categorias_populares">Comienza a Explorar</a>
+                    <div><i class='bx bx-chevron-down bx-sm'></i></div>
+                </div>
 
-                </div> 
-            </div> 
+                </div>
+
+            </div>
         </div>
     </div>
-   
-    <div class="wrapper fondoCasiBlacnco" id="categorias_populares" style="margin-top: 265px;"> 
+    <div class="container-fluid second-container">
+        <div class="wrapper">
+            <div class="row">
+               
+                <div class="Sugerencias">
+                    <p> Sugerencias: </p>
+                    <ul>
+                        <li type="button" class="BotonSug">Web Developer</li>
+                        <li type="button" class="BotonSug">Ux designer</li>
+                        <li type="button" class="BotonSug">Google Ads</li>
+                        <li type="button" class="BotonSug">Design</li>
+                        <li type="button" class="BotonSug">Video Edits</li>
+                        <li type="button" class="BotonSug">Google Ads</li>
+                        <li type="button" class="BotonSug">Web Developer</li>
+                        <li type="button" class="BotonSug">Ux designer</li>
+                        <li type="button" class="BotonSug">Google Ads</li>
+                        <li type="button" class="BotonSug">Web Developer</li>
+                        <li type="button" class="BotonSug">Ux designer</li>
+                        <li type="button" class="BotonSug">Google Ads</li>
+                        <li type="button" class="BotonSug">Ux designer</li>
+                        <li type="button" class="BotonSug">Google Ads</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="wrapper fondoCasiBlacnco" id="categorias_populares" >
         <div class="container-fluid">
-            <h2 class="TitulosSecciones" >Categorias Populares</h2>
+            <h2 class="TitulosSecciones">Categorias Populares</h2>
             <section class="card-list">
                 <article class="card">
                     <div>
-                        <img src="recursos/imagenes/illustracion_desarrollo web.svg" style="width: 120px; margin-top: 30px; "></img>
+                        <img src="recursos/imagenes/illustracion_desarrollo web.svg"
+                            style="width: 120px; margin-top: 30px; "></img>
                         <h2 class="Nombrecard">Desarrollador Web</h2>
-                        <p class="Textocard">Encuentra a especialistas en desarrollo web! Con ellos podras optimizar, mejorar o crear tu propia pagina web!</p>
+                        <p class="Textocard">Encuentra a especialistas en desarrollo web! Con ellos podras optimizar,
+                            mejorar o crear tu propia pagina web!</p>
                     </div>
                 </article>
                 <article class="card">
                     <div>
-                        <img src="recursos/imagenes/illustracion_desarrollo web.svg" style="width: 120px; margin-top: 30px; "></img>
+                        <img src="recursos/imagenes/illustracion_desarrollo web.svg"
+                            style="width: 120px; margin-top: 30px; "></img>
                         <h2 class="Nombrecard">Desarrollador Web</h2>
-                        <p class="Textocard">Encuentra a especialistas en desarrollo web! Con ellos podras optimizar, mejorar o crear tu propia pagina web!</p>
+                        <p class="Textocard">Encuentra a especialistas en desarrollo web! Con ellos podras optimizar,
+                            mejorar o crear tu propia pagina web!</p>
                     </div>
                 </article>
                 <article class="card">
                     <div>
-                        <img src="recursos/imagenes/illustracion_desarrollo web.svg" style="width: 120px; margin-top: 30px; "></img>
+                        <img src="recursos/imagenes/illustracion_desarrollo web.svg"
+                            style="width: 120px; margin-top: 30px; "></img>
                         <h2 class="Nombrecard">Desarrollador Web</h2>
-                        <p class="Textocard">Encuentra a especialistas en desarrollo web! Con ellos podras optimizar, mejorar o crear tu propia pagina web!</p>
+                        <p class="Textocard">Encuentra a especialistas en desarrollo web! Con ellos podras optimizar,
+                            mejorar o crear tu propia pagina web!</p>
                     </div>
                 </article>
                 <article class="card">
                     <div>
-                        <img src="recursos/imagenes/illustracion_desarrollo web.svg" style="width: 120px; margin-top: 30px; "></img>
+                        <img src="recursos/imagenes/illustracion_desarrollo web.svg"
+                            style="width: 120px; margin-top: 30px; "></img>
                         <h2 class="Nombrecard">Desarrollador Web</h2>
-                        <p class="Textocard">Encuentra a especialistas en desarrollo web! Con ellos podras optimizar, mejorar o crear tu propia pagina web!</p>
+                        <p class="Textocard">Encuentra a especialistas en desarrollo web! Con ellos podras optimizar,
+                            mejorar o crear tu propia pagina web!</p>
                     </div>
                 </article>
                 <article class="card">
                     <div>
-                        <img src="recursos/imagenes/illustracion_desarrollo web.svg" style="width: 120px; margin-top: 30px; "></img>
+                        <img src="recursos/imagenes/illustracion_desarrollo web.svg"
+                            style="width: 120px; margin-top: 30px; "></img>
                         <h2 class="Nombrecard">Desarrollador Web</h2>
-                        <p class="Textocard">Encuentra a especialistas en desarrollo web! Con ellos podras optimizar, mejorar o crear tu propia pagina web!</p>
+                        <p class="Textocard">Encuentra a especialistas en desarrollo web! Con ellos podras optimizar,
+                            mejorar o crear tu propia pagina web!</p>
                     </div>
                 </article>
                 <article class="card">
                     <div>
-                        <img src="recursos/imagenes/illustracion_desarrollo web.svg" style="width: 120px; margin-top: 30px; "></img>
+                        <img src="recursos/imagenes/illustracion_desarrollo web.svg"
+                            style="width: 120px; margin-top: 30px; "></img>
                         <h2 class="Nombrecard">Desarrollador Web</h2>
-                        <p class="Textocard">Encuentra a especialistas en desarrollo web! Con ellos podras optimizar, mejorar o crear tu propia pagina web!</p>
+                        <p class="Textocard">Encuentra a especialistas en desarrollo web! Con ellos podras optimizar,
+                            mejorar o crear tu propia pagina web!</p>
                     </div>
                 </article>
-                 <article class="card">
+                <article class="card">
                     <div>
-                        <img src="recursos/imagenes/illustracion_desarrollo web.svg" style="width: 120px; margin-top: 30px; "></img>
+                        <img src="recursos/imagenes/illustracion_desarrollo web.svg"
+                            style="width: 120px; margin-top: 30px; "></img>
                         <h2 class="Nombrecard">Desarrollador Web</h2>
-                        <p class="Textocard">Encuentra a especialistas en desarrollo web! Con ellos podras optimizar, mejorar o crear tu propia pagina web!</p>
+                        <p class="Textocard">Encuentra a especialistas en desarrollo web! Con ellos podras optimizar,
+                            mejorar o crear tu propia pagina web!</p>
                     </div>
                 </article>
-           </section>
+            </section>
 
         </div>
     </div>
-   
-    <div class="wrapper fondoBlanco" > 
+
+    <div class="wrapper fondoBlanco">
         <div class="container-fluid">
             <h2 class="TitulosSecciones">¿Como funciona Wooplance?</h2>
             <div class="row" style="margin-top: 90px; margin-left: 135px;">
-                <div  class="col">
-                    <img class= "comoFuncionaImg" src="/recursos/imagenes/como funciona 1.svg"></img>
+                <div class="col">
+                    <img class="comoFuncionaImg" src="/recursos/imagenes/como funciona 1.svg"></img>
                     <p class="descComoFunciona"> Establece detalladamente qué es lo que ofreces, y postéalo</p>
                 </div>
                 <div class="col">
-                    <img class= "comoFuncionaImg" src="/recursos/imagenes/como funciona 2.svg"></img>
-                    <p class="descComoFunciona"> Alguien quien necesite de tus servicios, te contactará para que resuelvas su necesidad </p>
+                    <img class="comoFuncionaImg" src="/recursos/imagenes/como funciona 2.svg"></img>
+                    <p class="descComoFunciona"> Alguien quien necesite de tus servicios, te contactará para que
+                        resuelvas su necesidad </p>
                 </div>
                 <div class="col">
-                    <img class= "comoFuncionaImg" src="/recursos/imagenes/como funciona 3.svg"></img>
-                    <p class="descComoFunciona"> Trabaja en conjunto con esa persona y desarrollen ese proyecto juntos. </p>
+                    <img class="comoFuncionaImg" src="/recursos/imagenes/como funciona 3.svg"></img>
+                    <p class="descComoFunciona"> Trabaja en conjunto con esa persona y desarrollen ese proyecto juntos.
+                    </p>
 
                 </div>
             </div>
-            <div class="row" style="margin-top: 90px; width: 1100px;  margin-left: 135px;"> 
-                <img src="/recursos/imagenes/LineaComofunciona.svg" ></img>
+            <div class="row" style="margin-top: 90px; width: 1100px;  margin-left: 135px;">
+                <img src="/recursos/imagenes/LineaComofunciona.svg"></img>
                 <div class="col PelotaComoFunciona">
-                    <img style="margin-left: 100px;" src="/recursos/imagenes/CiculoComoFunciona.svg" ></img>
+                    <img style="margin-left: 100px;" src="/recursos/imagenes/CiculoComoFunciona.svg"></img>
                 </div>
                 <div class="col PelotaComoFunciona">
                     <img style="margin-left: 175px;" src="/recursos/imagenes/CiculoComoFunciona.svg"></img>
                 </div>
                 <div class="col PelotaComoFunciona">
-                    <img style="margin-left: 260px;" src="/recursos/imagenes/CiculoComoFunciona.svg" ></img>
+                    <img style="margin-left: 260px;" src="/recursos/imagenes/CiculoComoFunciona.svg"></img>
                 </div>
             </div>
         </div>
-    </div>    
-  
+    </div>
+
     <div style="width: 100vw; height: 95vh;" class="container-fluid">
-            <div class="row">
-                <div style="height: 50vh; padding: 30px;" class="col-7">
-                    <h2 class="contactar">Contactanos</h2>
-                    <p class="descContacto">¿Tienes alguna duda sobre nuestro servicio, o te gustaría aportar con  una sugerencia?, envianos un mail o contactanos por nuestras redes sociales.</p>
-                    <form action="">
-                        <div class="row">
-                            <label >Mail</label>
-                            <input placeholder="Escriba su mail aquí" class="inputContactoMail" type="email">
-                        </div>
-                        <div class="row">
-                            <label >Mensaje</label>
-                            <textarea placeholder="Escribenos un Mensaje" class="inputContactoMSJ"></textarea>
-                        </div>
-                        <div class="row">
-                            <button  class="BtnEnivar">
-                                <img class="IconEnviar" src="/recursos/iconos/ic_enviar.svg"></img>Enviar
-                            </button>
-                        </div>          
-                    </form>
-                </div>
-                <div style="background-color: #9B9CB5; height: 95vh; padding: 30px; " class="col-5">
-                    <h2 class="nuestrasRedesTit">Nuestras Redes</h2>
-                    <ul class="Redes">
-                        <li style="margin-bottom: 30px;">
-                            <a href="https://www.instagram.com/" target="BLANK" class="info instagram"><img  class="iconosRedes" src="/recursos/iconos/ic_instagram.svg"></img>wooplance_ok </a>
-                        </li>
-                        <li style="margin-bottom: 30px;">
-                            <a href="https://www.facebook.com/" target="BLANK" class="info facebook"><img  class="iconosRedes" src="/recursos/iconos/ic_facebook.svg"></img>wooplance_ok </a>
-                        </li>                   
-                        <li style="margin-bottom: 30px;">
-                            <a href="https://www.linkedin.com/" target="BLANK" class="info linkedin"><img  class="iconosRedes" src="/recursos/iconos/ic_linkedin.svg">wooplance_ok </a>
-                        </li>
-                   </ul>
-                    <h3 class="infoContTit">Información de contacto</h3>
-                    <ul style="margin-top: 25px;" class="Redes">
-                        <li style="margin-bottom: 30px;">
-                            <a href="https://www.wa.link/sa05w4" target="BLANK" class="info whatsapp"><img  class="iconosRedes" src="/recursos/iconos/ic_whatsapp.svg"></img>4444-8888</a>
-                        </li>
-                        <li style="margin-bottom: 30px;">
-                            <a href="" target="BLANK" class="info gmail"><img  class="iconosRedes" src="/recursos/iconos/ic_gmail.svg"></img>wooplance@gmail.com</a></li>
-                    </ul>
-                    <a href="#">
-                        <img alt="logo wooplance" style="
+        <div class="row">
+            <div style="height: 50vh; padding: 30px;" class="col-7">
+                <h2 class="contactar">Contactanos</h2>
+                <p class="descContacto">¿Tienes alguna duda sobre nuestro servicio, o te gustaría aportar con una
+                    sugerencia?, envianos un mail o contactanos por nuestras redes sociales.</p>
+                <form action="">
+                    <div class="row">
+                        <label>Mail</label>
+                        <input placeholder="Escriba su mail aquí" class="inputContactoMail" type="email">
+                    </div>
+                    <div class="row">
+                        <label>Mensaje</label>
+                        <textarea placeholder="Escribenos un Mensaje" class="inputContactoMSJ"></textarea>
+                    </div>
+                    <div class="row">
+                        <button class="BtnEnivar">
+                            <img class="IconEnviar" src="/recursos/iconos/ic_enviar.svg"></img>Enviar
+                        </button>
+                    </div>
+                </form>
+            </div>
+            <div style="background-color: #9B9CB5; height: 95vh; padding: 30px; " class="col-5">
+                <h2 class="nuestrasRedesTit">Nuestras Redes</h2>
+                <ul class="Redes">
+                    <li style="margin-bottom: 30px;">
+                        <a href="https://www.instagram.com/" target="BLANK" class="info instagram"><img
+                                class="iconosRedes" src="/recursos/iconos/ic_instagram.svg"></img>wooplance_ok </a>
+                    </li>
+                    <li style="margin-bottom: 30px;">
+                        <a href="https://www.facebook.com/" target="BLANK" class="info facebook"><img
+                                class="iconosRedes" src="/recursos/iconos/ic_facebook.svg"></img>wooplance_ok </a>
+                    </li>
+                    <li style="margin-bottom: 30px;">
+                        <a href="https://www.linkedin.com/" target="BLANK" class="info linkedin"><img
+                                class="iconosRedes" src="/recursos/iconos/ic_linkedin.svg">wooplance_ok </a>
+                    </li>
+                </ul>
+                <h3 class="infoContTit">Información de contacto</h3>
+                <ul style="margin-top: 25px;" class="Redes">
+                    <li style="margin-bottom: 30px;">
+                        <a href="https://www.wa.link/sa05w4" target="BLANK" class="info whatsapp"><img
+                                class="iconosRedes" src="/recursos/iconos/ic_whatsapp.svg"></img>4444-8888</a>
+                    </li>
+                    <li style="margin-bottom: 30px;">
+                        <a href="" target="BLANK" class="info gmail"><img class="iconosRedes"
+                                src="/recursos/iconos/ic_gmail.svg"></img>wooplance@gmail.com</a></li>
+                </ul>
+                <a href="#">
+                    <img alt="logo wooplance" style="
                             width: 130px;
                             position: absolute;
                             right: 0;
                             margin: 0 20px 0 0;
-                            " 
-                        src="/recursos/imagenes/logo.svg"></img>
-                    </a>    
-                </div>
+                            " src="/recursos/imagenes/logo.svg"></img>
+                </a>
             </div>
+        </div>
     </div>
     <script src="/Logica/codigo1.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
-  </body>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js"
+        integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js"
+        integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous">
+    </script>
+</body>
+
 </html>

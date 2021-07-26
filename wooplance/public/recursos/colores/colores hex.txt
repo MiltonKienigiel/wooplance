@@ -1,6 +1,8 @@
 Azul oscuro: #2E3658
 Violeta: #A96CFE
+Violeta 2: #7100FF
 Violeta claro: #C9A2FF
 Rosa: #FAB1FF
+Rosa Fluo: #FF0088
 Gris claro: #F8F9F8
 Gris oscuro: #8F8F8F
