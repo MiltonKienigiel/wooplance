@@ -1,17 +1,12 @@
 const express = require('express');
 const router = express.Router();
-
+const controller = require('../controllers/gigsController')
 
 //-------------------------------
-router.get('/show/:id?', (req,res) => {
-    res.render('gig-detail');
-})
-router.get('/edit/:id?', (req,res) => {
-    res.render('gig-edit');
-})
-router.get('/add', (req,res) => {
-    res.render('gig-add');
-})
+router.get('/show/:id', controller.index)
+router.get('/add', controller.create)
+router.get('/edit/:id?', controller.edit)
+router.get('/myGigs', controller.myGigs)
 
 
 

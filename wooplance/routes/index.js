@@ -1,17 +1,12 @@
 const express = require('express');
 const router = express.Router();
-
+const controller = require('../controllers/mainController')
 
 //-------------------------------
-router.get('/', (req,res) => {
-    res.render('index');
-})
-router.get('/search', (req,res) => {
-    res.render('search-results');
-})
+router.get('/', controller.index)
+router.get('/search', controller.search)
+router.get('/categories', controller.categories)
+router.get('/chat', controller.chat)
 
-router.get('/categories', (req,res) => {
-    res.render('categories');
-})
 
 module.exports = router;

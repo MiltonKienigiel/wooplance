@@ -1,27 +1,17 @@
 const express = require('express');
 const router = express.Router();
+const controller = require('../controllers/usersController')
 
-
 //-------------------------------
-router.get('/profile/:id?', (req,res) => {
-    res.render('profile');
-})
+router.get('/profile/:id?', controller.index)
 //-------------------------------
-router.get('/profile/edit/:id?', (req,res) => {
-  res.render('profile-edit');
-})
+router.get('/profile/edit/:id?', controller.edit)
 //-------------------------------
-router.get('/register', (req,res) => {
-  res.render('register');
-})
+router.get('/register', controller.register)
 //-------------------------------
-router.get('/login', (req,res) => {
-  res.render('login');
-})
+router.get('/login', controller.login)
 //-------------------------------
-router.get('/dasboard', (req,res) => {
-  res.render('dashboard');
-})
+router.get('/dasboard', controller.dashboard)
 
 
 
