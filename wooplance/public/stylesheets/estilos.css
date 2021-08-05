@@ -1,3 +1,7 @@
+*{
+    transition-duration: 120ms;
+}
+
 body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
@@ -195,26 +199,17 @@ body {
 }
 
 .Sugerencias {
-    display: flex;
-    flex-direction: column;
+    
 
     bottom: 0;
     margin-bottom: 20px;
 }
 
-.Sugerencias>p {
-    font-weight: 300;
-    font-size: 13px;
-    color: black;
-    letter-spacing: 0.5px;
 
-    align-self: flex-start;
-}
 
 .Sugerencias>ul {
     display: flex;
-    flex-direction: row;
-    align-items: flex-start;
+    justify-content: space-between;
 
 
 }
@@ -224,7 +219,7 @@ body {
     font-size: 10px;
     border: 2px solid white;
     border-radius: 10px;
-    height: 25px;
+    
     font-weight: normal;
     color: white;
     /* color: black; */
@@ -234,7 +229,7 @@ body {
     align-items: center;
     justify-content: center;
 
-    padding: 8px 12px 8px 12px;
+    padding: 8px 12px ;
     margin: 0 5px 0 5px;
     transition: .2s;
     align-self: flex-start;
@@ -249,7 +244,8 @@ body {
 
 .first-container {
     margin-top: 6rem;
-    height: 70vh;
+    background-color: #7100FF;
+
 }
 
 .second-container {
@@ -291,6 +287,10 @@ body {
 
 }
 
+.FLECHA a:hover {
+    color: black;
+}
+
 @keyframes animacionExplorar {
     from {
         top: 88%;
@@ -314,12 +314,11 @@ body {
 }
 
 .fondoCasiBlacnco {
-    background-color: #F8F9F8;
+    background-color: #0000001c;
     width: 100vw;
 }
 
 .TitulosSecciones {
-    margin-top: 75px;
     color: #2E3658;
     font-size: 28px;
     font-weight: 900;
@@ -330,28 +329,12 @@ body {
     padding: 3rem;
 
     margin-top: 35px;
-
+    justify-content: space-evenly;
 }
 
-.card-list::-webkit-scrollbar {
-    width: 10px;
-    height: 10px;
-}
-
-.card-list::-webkit-scrollbar-thumb {
-    background: #eeeeee;
-    border-radius: 10px;
-
-}
-
-.card-list::-webkit-scrollbar-track {
-    background: #eeeeee;
-}
 
 .card {
 
-    width: 280px;
-    height: 360px;
     background: #ffffff;
     transition: .2s;
     box-shadow: 0px 0px 10px #0000001F;
@@ -377,22 +360,22 @@ body {
     margin-top: 28px;
 }
 
-.card:hover {
-    transform: translateY(-1rem);
-}
-
-.card:hover~.card {
-    transform: translateX(100px);
-}
-
-.card:not(:first-child) {
-    margin-left: -130px;
-}
-
+.card:hover{
+    border-radius: 10px;
+    background-color: black;
+    color:white !important;
+ }
+ .card:hover .Nombrecard {
+     
+     color:white !important;
+  }
+ .card:hover .Textocard {
+     
+     color:white !important;
+  }
 .fondoBlanco {
     background-color: #ffffff;
     width: 100vw;
-    height: 120vh;
 }
 
 .comoFuncionaImg {
@@ -540,20 +523,25 @@ label {
 .gmail:hover {
     color: rgb(255, 0, 0);
 }
-.position-relative{
+
+.position-relative {
     position: relative;
 }
-.worker_description{
+
+.worker_description {
     position: absolute;
     top: 50px;
     right: 10px;
     color: white;
 }
-.worker_description p{
+
+.worker_description p {
     color: #a78bce;
 }
-.ImagenPersona{
+
+.ImagenPersona {
     max-height: 50vh;
     position: absolute;
     left: 190px;
 }
+
