@@ -11,7 +11,7 @@
         <!-- Show the "ultimos" products -->
 
         <!-- Formulario de Registro -->
-        <div>
+        <div class="form">
             <form class="input-sign" action="/register" method="POST" enctype="multipart/form-data">
                 <p class="half">
                     <input type="text" placeholder="Nombre/s" name="name" id="nombre" required>
@@ -31,7 +31,7 @@
                 </p>
 
                 <p>
-                    <input id="file" type="file" name="profilePic" id="fotoProducto" accept="image/png, image/jpeg, image/jpg">
+                    <input  type="file" name="profilePic" id="fotoProducto" accept="image/png, image/jpeg, image/jpg">
                 </p>
 
                 <p>
@@ -43,18 +43,16 @@
                         minlength="8" required>
                 </p>
 
-                <h4 id="recordame">
-                    Recordame <input type="checkbox" name="remember" id="checkbox">
-                </h4>
+                
 
-                <button id="boton" type="submit" name="register-button" id="register-button">Registrarme</button>
+                <button id="boton" class="register-button" type="submit" name="register-button" id="register-button">Registrarme</button>
             </form>
         </div>
 
     </div>
 
     <div>
-        <img id="ilustracion-login" src="images/ilustracion-login1.png" alt="Foto de ilustracion">
+        <img id="ilustration" src="images/fixedImages/register-img.svg" alt="Foto de ilustracion">
     </div>
 
 </body>

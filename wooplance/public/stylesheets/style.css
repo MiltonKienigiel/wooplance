@@ -15,31 +15,50 @@ a {
   grid-template-columns: 50% 50%;
   justify-content: space-between;
 }
+
 .products-wrapper {
   margin-top: 150px;
   margin-bottom: 30px;
   /* padding-left: 25px; */
   padding-right: 25px;
 }
+
 h2.products-title {
   font-family: 'Rubik', sans-serif;
   font-weight: bold;
   font-size: 30px;
   text-align: center;
 }
+
 .form {
   justify-self: center;
   width: 100%;
+  display: flex;
+  justify-content: center;
 }
-.login{
+
+.login {
   padding: 0;
   width: 100%;
-    justify-self: center;
+  justify-self: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 50px;
 }
-input {
+
+.login p{
   width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 5px 0;
+}
+
+input {
+  width: 85%;
   padding: 15px;
-  margin: 5px 0 15px 0;
+  margin: 0 0 5px 0;
   border-radius: 8px;
   font-size: 15px;
   border-width: 2px;
@@ -47,9 +66,9 @@ input {
 }
 
 #boton {
-  width: 100%;
+  width: 85%;
   padding: 15px;
-  margin: 0 0 15px 0;
+  margin: 30px 0 15px 0;
   border-radius: 8px;
   font-size: 20px;
   background-color: #FF0088;
@@ -58,12 +77,18 @@ input {
   text-align: center;
 }
 
-#boton:hover{
+#boton:hover {
   background-color: #ff008888;
-  
+
+}
+#recordame{
+  width: 100px;
+  display: flex;
+  align-self: self-start;
+  margin-left: 50px;
 }
 #crea {
-  width: 100%;
+  width: 85%;
   padding: 15px;
   margin: 0 0 15px 0;
   border-radius: 8px;
@@ -75,22 +100,50 @@ input {
   text-decoration-line: none;
   border: solid 1px #7300ff91;
 }
-#crea:hover{
+
+#crea:hover {
   background-color: rgba(149, 149, 149, 0.26);
 
 }
-#crea a{
+
+#crea a {
   text-decoration-line: none;
   color: #7100FF;
 }
 
-.half{
-  display: flex;
-  justify-content:space-between
+
+#ilustration {
+  /* width: 90%; */
+  margin-top: 80px;
 }
-.half input{
-  width:48%
+#register-url {
+  margin-left: 70px;
+  margin-top: 30px;
 }
 
 /**************************************** REGISTER **********************************/
+.form{
+  margin-top:30px
+}
+.input-sign input{
+  width: 100%;
+}
 
+.input-sign .register-button{
+  width: 100% !important;
+}
+.half {
+  display: flex;
+  justify-content: space-between
+}
+
+.half input {
+  width: 48%
+}
+
+#fotoProducto{
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 8px;
+  border-color: rgba(0, 0, 0, 0.5);
+}
