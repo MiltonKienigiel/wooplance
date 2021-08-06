@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('./partials/head') %> 
+<body>
+<%- include('./partials/header') %> 
+    
+<div id="columna" class="container products-wrapper">
+    <div class="row form">
+        <div class="col-12">
+            <h2 class="products-title">Inicia sesión en Wooplance</h2>
+        </div>
+
+        <!-- Formulario de login -->
+        <form action="/" method="GET" class="login">
+            <p>
+                <input type="email" placeholder="Nombre de usuario o correo electrónico" name="mail" id="mail" required>
+            </p>
+            <p>
+                <input type="password" placeholder="Contraseña" name="password" id="password" required>
+            </p>
+            
+            <h4 id="recordame">
+                Recordame <input type="checkbox" name="remember" id="checkbox">
+            </h4>
+            <button id="boton" type="submit" name="login-button" id="login-button">Iniciar sesión</button>
+
+        </form>
+        <button id="crea" type="submit" name="login-button" id="login-button"><a href="/register">Crea tu cuenta</a></button>
+
+    </div>
+
+    <div class="img">
+        <img id="ilustracion-login" src="images/ilustracion-login1.png" alt="Foto de ilustracion">
+    </div>
+
+</div>
+</body>
+</html>

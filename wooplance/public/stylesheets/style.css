@@ -1,8 +1,79 @@
 body {
-  padding: 50px;
+  padding: 0px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
 a {
   color: #00B7FF;
+}
+
+
+/****************************** LOGIN *****************************************/
+
+#columna {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  justify-content: space-between;
+}
+.products-wrapper {
+  margin-top: 150px;
+  margin-bottom: 30px;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+h2.products-title {
+  font-family: 'Rubik', sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+  text-align: center;
+}
+.login{
+  padding: 0;
+}
+input {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 15px 0;
+  border-radius: 8px;
+  font-size: 15px;
+  border-width: 2px;
+  border-style: solid;
+}
+
+#boton {
+  width: 100%;
+  padding: 15px;
+  margin: 0 0 15px 0;
+  border-radius: 8px;
+  font-size: 20px;
+  background-color: #FF0088;
+  color: whitesmoke;
+  border-width: 0px;
+  text-align: center;
+}
+
+#boton:hover{
+  background-color: #ff008888;
+  
+}
+#crea {
+  width: 100%;
+  padding: 15px;
+  margin: 0 0 15px 0;
+  border-radius: 8px;
+  font-size: 20px;
+  background-color: #7100FF;
+  color: white;
+  border-width: 0px;
+  text-align: center;
+  text-decoration-line: none;
+
+}
+#crea:hover{
+  background-color: #7300ff9b;
+
+}
+#crea a{
+  text-decoration-line: none;
+  color: white;
 }
