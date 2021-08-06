@@ -18,7 +18,7 @@ a {
 .products-wrapper {
   margin-top: 150px;
   margin-bottom: 30px;
-  padding-left: 25px;
+  /* padding-left: 25px; */
   padding-right: 25px;
 }
 h2.products-title {
@@ -27,8 +27,14 @@ h2.products-title {
   font-size: 30px;
   text-align: center;
 }
+.form {
+  justify-self: center;
+  width: 100%;
+}
 .login{
   padding: 0;
+  width: 100%;
+    justify-self: center;
 }
 input {
   width: 100%;
@@ -62,18 +68,29 @@ input {
   margin: 0 0 15px 0;
   border-radius: 8px;
   font-size: 20px;
-  background-color: #7100FF;
+  background-color: white;
   color: white;
   border-width: 0px;
   text-align: center;
   text-decoration-line: none;
-
+  border: solid 1px #7300ff91;
 }
 #crea:hover{
-  background-color: #7300ff9b;
+  background-color: rgba(149, 149, 149, 0.26);
 
 }
 #crea a{
   text-decoration-line: none;
-  color: white;
+  color: #7100FF;
 }
+
+.half{
+  display: flex;
+  justify-content:space-between
+}
+.half input{
+  width:48%
+}
+
+/**************************************** REGISTER **********************************/
+
