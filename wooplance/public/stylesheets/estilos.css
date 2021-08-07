@@ -227,8 +227,8 @@ body {
 
 .Sugerencias>ul {
     display: flex;
-    justify-content: space-between;
-
+    flex-wrap: wrap;
+    gap: 5px;
 
 }
 
@@ -380,17 +380,9 @@ body {
 
 .card:hover{
     border-radius: 10px;
-    background-color: black;
-    color:white !important;
+    box-shadow: 0px 0px 10px #00000070;
  }
- .card:hover .Nombrecard {
-     
-     color:white !important;
-  }
- .card:hover .Textocard {
-     
-     color:white !important;
-  }
+ 
 .fondoBlanco {
     background-color: #ffffff;
     width: 100vw;
@@ -452,7 +444,6 @@ label {
     font-size: 14px;
     border-radius: 5px;
     width: 550px;
-    height: 150px;
     border: none;
     background-color: #F8F9F8;
     margin: 0 0 0 10px;
@@ -563,3 +554,14 @@ label {
     left: 190px;
 }
 
+.logoFooter{
+    position: relative;
+}
+.logoFooter img{
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto auto;
+}
